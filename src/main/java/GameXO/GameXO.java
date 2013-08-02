@@ -61,7 +61,7 @@ public class GameXO extends JFrame implements ActionListener {
     private GameXO(String... args) {
         super("GameXO");
         initGameOptions(args);
-        init();
+        initGameFields();
         setLayout(new GridLayout(dimension, dimension));
         setSize(IMG_SIZE_PX * dimension, IMG_SIZE_PX * dimension);
         setResizable(false);
@@ -94,9 +94,9 @@ public class GameXO extends JFrame implements ActionListener {
     }
 
     /**
-     * init game fields
+     * initGameFields game fields
      */
-    private void init() {
+    private void initGameFields() {
         matrix = new int[dimension][dimension];
         for (int i = 0; i < dimension * dimension; i++) {
             buttons.put(String.valueOf(i), new JButton());
