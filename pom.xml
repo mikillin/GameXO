@@ -40,7 +40,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>GameXO.GameXO</mainClass>
+                            <mainClass>game.GameXO</mainClass>
                             <packageName>GameXO</packageName>
                         </manifest>
                         <manifestFile>src/main/resources/META-INF/MANIFEST.MF</manifestFile>
